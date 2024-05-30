@@ -30,3 +30,13 @@ ggplot(aes(x=latitude, y=size), data=pie_crab) + # create the plot
   labs(x = "Latitude", y = "Size") + # update axes labels
   theme_minimal() # update the theme to not have grid (aka crissycrossies)
 ```
+
+```{r}
+crab_model <- lm(size ~ latitude, 
+                 data = pie_crab)
+
+par(mfrow = c(2, 2))
+plot(crab_model)
+```
+
+\_model
