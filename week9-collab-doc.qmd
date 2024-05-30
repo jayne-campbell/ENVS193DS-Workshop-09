@@ -5,4 +5,19 @@ format: html
 editor: visual
 ---
 
-## 
+## load librar
+
+load libraries
+
+```{r}
+library(tidyverse)
+library(lterdatasampler)
+library(ggeffects)
+library(here)
+```
+
+I am reading in data here (edit later)
+
+```{r}
+data(pie_crab)
+```
