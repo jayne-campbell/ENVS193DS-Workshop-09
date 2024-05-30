@@ -5,7 +5,7 @@ format: html
 editor: visual
 ---
 
-## load librar
+## load libraries
 
 load libraries
 
@@ -20,4 +20,13 @@ I am reading in data here (edit later)
 
 ```{r}
 data(pie_crab)
+```
+
+I will visualize the data!!
+
+```{r}
+ggplot(aes(x=latitude, y=size), data=pie_crab) + # create the plot
+  geom_point(color = "orange") + # scatterplot, the points are orange
+  labs(x = "Latitude", y = "Size") + # update axes labels
+  theme_minimal() # update the theme to not have grid (aka crissycrossies)
 ```
